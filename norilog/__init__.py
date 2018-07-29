@@ -79,6 +79,10 @@ def save():
     return redirect('/')
 
 
+def main():
+    application.run('127.0.0.1', 8000)
+
+
 if __name__ == '__main__':
     # IPアドレス0.0.0.0の8000番ポートでアプリケーションを起動
-    application.run('0.0.0.0', 8000, debug=True)
+    application.run('127.0.0.1', 8000, debug=True)
